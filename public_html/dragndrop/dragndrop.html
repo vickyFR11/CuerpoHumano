@@ -1,0 +1,760 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="../scratch/newcss.css" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="navbar.css" rel="stylesheet">
+     <script src="../js/jquerydrag.js"></script>
+      <script src="../js/jquerydrop.js"></script>
+      
+    <script src="../js/mostrar.js"></script>
+      <!--<script type="text/javascript" src="../js/libs/jquery/jquery.js"></script>-->
+  </head>
+
+  <body>  
+      
+         <script type="text/javascript" src="../js/dragndrop.js"></script>
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+             <a href="../Inicio/index.html">
+                <img src="../images/logo2.png" alt="als" class="img-circle"  width='100' height='100' style='margin:0em;'>
+                 <!--<li><a href="../navbar-static-top/" >--> 
+                 <img src="../images/letras.png" alt="als"  width='500' height='100' style='margin:0em;'>
+              </a>
+          </div>
+          
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="../acercade.html">Acerca de</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+      <!-- Main component for a primary marketing message or call to action -->
+     
+      <div  class="jumbotron" style="background: rgba(255,255,255,0.5);">
+          
+           <div class="row"> 
+               
+               <div class="col-xs-12 col-sm-9">
+                   
+               <div class="col-md-4">
+                    
+                   <input id="digestivo" type="button" value="Digestivo" name="digestivo"/>
+                    <br>
+                    <br>
+                    <input id="circulatorio" type="button" value="Circulatorio" name="circulatorio"/>
+                    <br>
+                    <br>
+                    <input id="respiratorio" type="button" value="Respiratorio" name="respiratorio"/>
+                    <br>
+                    <br>
+                    <input id="urinario" type="button" value="Urinario" name="urinario"/>
+                    <br>
+                    <br>
+                    <input id="oseo" type="button" value="Óseo" name="esqueleto"/>
+                    <br>
+                    <br>
+                    <input id="nervioso" type="button" value="Nervioso" name="nervioso"/>
+                    <br>
+                    <br>
+                    <input id="endocrino" type="button" value="Endocrino" name="endocrino"/>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input id="borrar" type="button" value="Borrar" onclick='location.href="./dragndrop.html"'/>
+                     <br>
+                    <br>
+                    <input id="botonVerde" value="Volver" style="background:green" onclick="location.href='../Inicio/index.html'" />
+               </div>
+             
+             <div class="col-xs-offset-12 col-sm-offset-6" id="rellenar" >
+                    <section id="preguntas">
+                        <!--Sistema digestivo-->
+                        <article id="higado" class="preg ui-droppable" style="display: none;  margin-left: 2em; margin-top: 0.25em;">
+                            <p id="hig"> Higado </p>
+                        </article>                     
+                        <article  id="glandula" class="preg ui-droppable" style="display: none; margin-left: 8em; margin-top: 0em;">
+                            <p id="gla"> Glandula salival </p>
+                        </article>
+                         <article id="boca" class="preg ui-droppable" style="display: none;  margin-left: 21em; margin-top: 2em;">
+                             <p id="bo">Boca</p>
+                        </article>
+                        <article id="bilis" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: 0em;">
+                            <p id="bil">Vesicula Biliar </p>
+                        </article>
+                        <article id="esofago" class="preg ui-droppable" style="display: none; margin-left: 11em; margin-top: 1em; ">
+                            <p id="es">Esofago</p>
+                        </article>      
+                         <article id="ig" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: 1em;">
+                             <p id="inst">Intestino grueso </p>
+                        </article>
+                        <article id="estomago" class="preg ui-droppable" style="display: none; margin-left: 11em; margin-top: .25em; ">
+                            <p id="estom">Estomago</p>
+                        </article>                  
+                        <article id="pancreas" class="preg ui-droppable" style="display: none; margin-left: 21em; margin-top: 0.75em;">
+                            <p id="pancr">Pancreas</p>
+                        </article>          
+                        <article id="id" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: none;">
+                            <p id="del">Intestino delgado</p>
+                        </article>
+                        <article id="recto" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: 4em;">
+                            <p id="rec">Recto</p>
+                        </article>
+                  <!--Sistema Circulatorio-->  
+                        <article id="corazon" class="preg ui-droppable" style="display: none; margin-left: 21em; margin-top: 5em;">
+                            <p id="cor">Corazon</p>
+                        </article>          
+                        <article id="ve" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: none;">
+                            <p id="ven">Vena</p>
+                        </article>
+                  <br>
+                        <article id="art" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: 3em;">
+                            <p id="ar">Arteria</p>
+                        </article>
+                 <!--Sistema respiratorio--> 
+                        <article id="lar" class="preg ui-droppable" style="display: none; margin-left: 21em; margin-top: none;">
+                            <p id="lari">Laringe</p>
+                        </article>
+                  <article id="bron" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: 3em;">
+                            <p id="bro">Bronquios</p>
+                        </article>
+                        <article id="tra" class="preg ui-droppable" style="display: none; margin-left: 11em; margin-top: 4em;">
+                            <p id="traq">Traquea</p>
+                        </article>
+                 
+                        <article id="pulm" class="preg ui-droppable" style="display: none; margin-left: 21em; margin-top: 5em;">
+                            <p id="pu">Pulmon</p>
+                        </article>          
+                  <!--Sistema urinario--> 
+                        <article id="ri" class="preg ui-droppable" style="display: none; margin-left: 21em; margin-top: none;">
+                            <p id="rino">Riñon</p>
+                        </article>
+                        <article id="ur" class="preg ui-droppable" style="display: none; margin-left: 21em; margin-top: 11em;">
+                            <p id="urt">Ureter</p>
+                        </article> 
+                        <article id="vej" class="preg ui-droppable" style="display: none; margin-left: 5em; margin-top: 5em;">
+                            <p id="veji">Vejiga</p>
+                        </article>    
+                        <article id="urtra" class="preg ui-droppable" style="display: none; margin-left: 8em; margin-top: 4em;">
+                            <p id="uretr">Uretra</p>
+                        </article>        
+                   <!--Sistema nervioso--> 
+                        <article id="ce" class="preg ui-droppable" style="display: none; margin-left: 21em; margin-top: none;">
+                            <p id="cer">Cerebro</p>
+                        </article>
+                        <article id="me" class="preg ui-droppable" style="display: none; margin-left: 21em; margin-top: 3em;">
+                            <p id="med">Medula espinal</p>
+                        </article> 
+                        <article id="np" class="preg ui-droppable" style="display: none; margin-left: 23em; margin-top: 2em;">
+                            <p id="ner">Nervio periferico</p>
+                        </article> 
+                    <!--Oseo--> 
+                        <article id="huesos" class="preg ui-droppable" style="display: none; margin-left: 23em; margin-top: 8em;">
+                            <p id="hu">Huesos</p>
+                        </article>
+                      <article id="articulaciones" class="preg ui-droppable" style="display: none; margin-left: 23em; margin-top: 1em;">
+                          <p id="arti">Articulaciones</p>
+                        </article>
+                        <article id="cartilago" class="preg ui-droppable" style="display: none; margin-left: 21em; margin-top: 1em;">
+                            <p id="car">Cartilago</p>
+                        </article> 
+                      <!--Endocrino--> 
+                        <article id="gp" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: none;">
+                            <p id="glapi">Glandula pineal</p>
+                        </article>
+                      <article id="hi" class="preg ui-droppable" style="display: none; margin-left: 11em; margin-top: 0em;">
+                          <p id="hip">Hipotalamo</p>
+                        </article> 
+                      <article id="gpi" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: 0.25em;">
+                          <p id="glapitu">Glandula pituitaria</p>
+                        </article>
+                      <article id="ti" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: 1em;">
+                          <p id="glatiro">Glandula tiroidea</p>
+                        </article> 
+                      <article id="para" class="preg ui-droppable" style="display: none; margin-left: 11em; margin-top: 2em;">
+                          <p id="glapara">Glandula paratiroides</p>
+                        </article>
+                        <article id="timo" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: 0em;">
+                            <p id="glatimo">Glandula del timo</p>
+                        </article>
+                        <article id="co" class="preg ui-droppable" style="display: none; margin-left: 12em; margin-top: 0.25em;">
+                            <p id="cora">Corazon2</p>
+                        </article>
+                         <article id="ga" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: 0.25em;">
+                            <p id="gladre">Glandula adrenal</p>
+                        </article>  
+                         <article id="est" class="preg ui-droppable" style="display: none; margin-left: 12em; margin-top: 0.75em;">
+                            <p id="estoma">Estomago</p>
+                        </article>
+                       <article id="rin" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: 0em;">
+                           <p id="rinon">Riñon</p>
+                        </article>
+                       <article id="duo" class="preg ui-droppable" style="display: none; margin-left: 12em; margin-top: 0.25em;">
+                           <p id="duod">Duodeno</p>
+                        </article>
+                      <article id="piel" class="preg ui-droppable" style="display: none; margin-left: 0em; margin-top: 0.25em;">
+                          <p id="pieel">Piel</p>
+                        </article>
+                      <article id="panc" class="preg ui-droppable" style="display: none; margin-left: 12em; margin-top: 0.25em;">
+                          <p id="pa">Pancreas2</p>
+                        </article>
+                       <article id="tes" class="preg ui-droppable" style="display: none; margin-left: 5em; margin-top: 1em;">
+                           <p id="test">Testiculos</p>
+                        </article>
+                       <article id="ova" class="preg ui-droppable" style="display: none; margin-left: 8em; margin-top: 2em;">
+                           <p id="ovario">Ovarios</p>
+                        </article>
+                    </section>         
+            </div> 
+             <!--ondrop="drop(event)" ondragover="allowDrop(event)" en los divs-->
+             <!--<div  class="col-xs-offset-6 col-md-offset-3" id="conjunto" style="z-index:0;">-->
+                 <div class="container-fluid col-md-12 col-md-push-9"  id="respuestas" >
+                     <!--Sistema Endocrino-->
+			<img id="ovaimg" src="../images/endocrino/ovarios.jpg" class="respuesta ui-draggable" alt="ovarios" style="position: relative; z-index: 1; width:70px; height:40px; display:none;">
+			<img id="tesimg" src="../images/endocrino/testiculos.jpg" class="respuesta ui-draggable" alt="testiculos" style="position: relative; z-index: 1; width:70px; height:40px; display:none;">
+			<!--<img id="pancimg" src="../images/endocrino/pancreasjpg" class="respuesta ui-draggable" alt="pancreas" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">-->
+			<img id="pimg" src="../images/endocrino/piel.jpg" class="respuesta ui-draggable" alt="piel" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">	
+			<img id="ppanimg" src="../images/endocrino/pancreas2.jpg" class="respuesta ui-draggable" alt="pancreas2" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+			<img id="duimg" src="../images/endocrino/duodeno.jpg" class="respuesta ui-draggable" alt="duodeno" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="rinimg" src="../images/endocrino/riñon.jpg" class="respuesta ui-draggable" alt="riñon" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+			<img id="estoimg" src="../images/endocrino/estomago.jpg" class="respuesta ui-draggable" alt="estomago" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="gaimg" src="../images/endocrino/glandula adrenal.jpg" class="respuesta ui-draggable" alt="glandula adrenal" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+			<img id="ccoimg" src="../images/endocrino/corazon2.jpg" class="respuesta ui-draggable" alt="corazon2" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="timimg" src="../images/endocrino/glandula del timo.jpg" class="respuesta ui-draggable" alt="glandula del timo" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="parimg" src="../images/endocrino/glandula paratiroides.jpg" class="respuesta ui-draggable" alt="glandula paratiroides" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="gtimg" src="../images/endocrino/glandula tiroidea.jpg" class="respuesta ui-draggable" alt="glandula tiroidea" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                       <img id="hipimg" src="../images/endocrino/hipotalamo.jpg" class="respuesta ui-draggable" alt="hipotalamo" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                       <img id="gpitimg" src="../images/endocrino/glandula pituitaria.jpg" class="respuesta ui-draggable" alt="glandula pituitaria" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                       <img id="gpinimg" src="../images/endocrino/glandula pineal.jpg" class="respuesta ui-draggable" alt="glandula pineal" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">             
+                     <!--Sistema Digestivo-->
+			<img id="bocaimg" src="../images/digestivo/boca.jpg" class="respuesta ui-draggable" alt="boca" style="position: relative; z-index: 1; width:70px; height:40px; display:none;">
+			<img id="gsimg" src="../images/digestivo/glandula salival.jpg" class="respuesta ui-draggable" alt="glandula salival" style="position: relative; z-index: 1; width:70px; height:40px; display:none;">
+			<img id="esimg" src="../images/digestivo/esofago.png" class="respuesta ui-draggable" alt="esofago" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+			<img id="estimg" src="../images/digestivo/estomago.jpg" class="respuesta ui-draggable" alt="estomago" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">	
+			<img id="panimg" src="../images/digestivo/pancreas.jpg" class="respuesta ui-draggable" alt="pancreas" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+			<img id="hiimg" src="../images/digestivo/higado.jpg" class="respuesta ui-draggable" alt="higado" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="vbimg" src="../images/digestivo/vesicula biliar.jpg" class="respuesta ui-draggable" alt="vesicula biliar" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+			<img id="igimg" src="../images/digestivo/intestino grueso.jpg" class="respuesta ui-draggable" alt="intestino grueso" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="idimg" src="../images/digestivo/intestino delgado.jpg" class="respuesta ui-draggable" alt="intestino delgado" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+			<img id="recimg" src="../images/digestivo/recto.jpg" class="respuesta ui-draggable" alt="recto" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                      <!--Sistema circulatorio-->
+                       <img id="coimg" src="../images/circulatorio/corazon.jpg" class="respuesta ui-draggable" alt="corazon" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="veimg" src="../images/circulatorio/arteria.jpg" class="respuesta ui-draggable" alt="vena" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+			<img id="arimg" src="../images/circulatorio/vena.jpg" class="respuesta ui-draggable" alt="arteria" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                      <!--Sistema respiratorio-->
+                       <img id="broimg" src="../images/respiratorio/pulmon.png" class="respuesta ui-draggable" alt="pulmon" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="pulimg" src="../images/respiratorio/laringe.jpg" class="respuesta ui-draggable" alt="laringe" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+			<img id="traimg" src="../images/respiratorio/traquea.png" class="respuesta ui-draggable" alt="traquea" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="larimg" src="../images/respiratorio/bronquios.jpg" class="respuesta ui-draggable" alt="bronquios" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                    <!--Sistema urinario-->
+                       <img id="riimg" src="../images/urinario/riñon.jpg" class="respuesta ui-draggable" alt="riñon" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="urimg" src="../images/urinario/ureter.jpg" class="respuesta ui-draggable" alt="ureter" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+			<img id="vejimg" src="../images/urinario/vejiga.jpg" class="respuesta ui-draggable" alt="vejiga" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="urtraimg" src="../images/urinario/uretra.jpg" class="respuesta ui-draggable" alt="uretra" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                    <!--Sistema nervioso-->
+                       <img id="ceimg" src="../images/nervioso/cerebro.jpg" class="respuesta ui-draggable" alt="cerebro" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="meimg" src="../images/nervioso/medula espinal.gif" class="respuesta ui-draggable" alt="medula espinal" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+			<img id="npimg" src="../images/nervioso/nervio.jpg" class="respuesta ui-draggable" alt="nervio periferico" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                     <!--Sistema nervioso-->
+                       <img id="huimg" src="../images/oseo/huesos.jpg" class="respuesta ui-draggable" alt="huesos" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+                        <img id="artimg" src="../images/oseo/articulaciones.jpg" class="respuesta ui-draggable" alt="articulaciones" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+			<img id="carimg" src="../images/oseo/cartilago.gif" class="respuesta ui-draggable" alt="cartilago" style="position: relative; z-index: 1; width:40px; height:40px; display:none;">
+          
+		</div>   
+           </div>
+                <canvas width="150" height="215" id="canvass" style="position: absolute; top: 415px; left: 1115px;"></canvas>
+               </div>
+      
+          
+          
+          <div id="burbujaTexto" style=" width: 200px; height: 200px; position: absolute; top: 360px; left: 1015px; display: block;">
+              <img id="imgen" src="../imagenesMascota/burbujadrag.png"> 
+           </div>
+          
+                   
+      </div>
+      
+<!--col-xs-6 col-sm-3--> 
+    </div> <!-- /container -->
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+         $("#hig").hide();$("#gla").hide();$("#rec").hide();$("#del").hide(); $("#bo").hide(); $("#bil").hide(); $("#es").hide(); $("#inst").hide();$("#estom").hide();$("#pancr").hide();      
+         $("#ar").hide();$("#ven").hide();$("#cor").hide();
+         $("#traq").hide();$("#bro").hide();$("#uretr").hide();$("#lari").hide();$("#pu").hide();$("#rino").hide();$("#veji").hide();$("#urt").hide();
+         $("#ner").hide();$("#med").hide();$("#cer").hide();
+         $("#hu").hide();$("#arti").hide();$("#car").hide();
+         
+        $("#test").hide();$("#ovario").hide();
+        $("#pieel").hide();
+        $("#pa").hide();$("#rinon").hide();$("#duod").hide();
+        $("#estoma").hide();$("#cora").hide();$("#gladre").hide();
+        $("#glapitu").hide();$("#glapi").hide();$("#hip").hide();
+        $("#glapiro").hide();$("#glatimo").hide()
+        $("#glapara").hide();$("#glatiro").hide();
+        $('#nervioso').click(function() {
+
+            $("#tesimg").hide();$("#pancimg").hide();
+            $("#ovaimg").hide();$("#pimg").hide();
+            $("#ppanimg").hide();$("#duimg").hide();
+            $("#rinimg").hide();$("#estoimg").hide();
+            $("#ccoimg").hide();$("#gaimg").hide();
+            $("#timimg").hide();$("#parimg").hide();
+            $("#gtimg").hide();$("#hipimg").hide();
+            $("#gpitimg").hide();$("#gpinimg").hide();
+            
+            
+            $("#timo").hide();$("#gp").hide();
+            $("#hi").hide();  $("#gpi").hide(); 
+            $("#para").hide(); $("#co").hide();  
+            $("#ga").hide(); $("#est").hide();
+            $("#rin").hide(); $("#duo").hide();
+            $("#piel").hide(); $("#panc").hide();
+            $("#tes").hide(); $("#ova").hide();
+           
+            $("#huesos").hide(); $("#articulaciones").hide();
+            $("#cartilago").hide(); 
+            $("#huimg").hide(); $("#artimg").hide();
+            $("#carimg").hide();
+            
+             $("#bocaimg").hide();$("#gsimg").hide();
+            $("#esimg").hide();  $("#estimg").hide();
+            $("#panimg").hide(); $("#hiimg").hide();
+            $("#vbimg").hide();  $("#idimg").hide();
+            $("#igimg").hide();  $("#recimg").hide();
+            
+            $("#estomago").hide(); $("#glandula").hide();
+            $("#boca").hide();     $("#esofago").hide();
+            $("#pancreas").hide(); $("#higado").hide();
+            $("#bilis").hide();    $("#ig").hide();
+            $("#id").hide();       $("#recto").hide();
+            
+            $("#coimg").hide(); $("#arimg").hide();
+            $("#veimg").hide();
+            
+            $("#corazon").hide(); $("#art").hide();
+            $("#ve").hide();
+            
+            $("#bron").hide(); $("#lar").hide();
+            $("#tra").hide();  $("#pulm").hide(); 
+            $("#broimg").hide(); $("#larimg").hide();
+            $("#traimg").hide();  $("#pulimg").hide();
+            
+            $("#urtra").hide(); $("#ri").hide();
+            $("#vej").hide();  $("#ur").hide();
+            $("#urtraimg").hide(); $("#riimg").hide();
+            $("#vejimg").hide();  $("#urimg").hide();
+           
+            $("#ceimg").show(); $("#meimg").show();
+            $("#npimg").show(); 
+            
+            $("#ce").show(); $("#np").show();
+            $("#me").show(); 
+            
+            mostrarDialogoTest("nervioso");
+            
+        });  
+        // Aquí va el resto del código que solo se ejecutará cuando la página haya cargado.
+        $('#digestivo').click(function() {
+//            var elementos = document.getElementById("lungs");
+            $("#para").hide();$("#co").hide(); 
+            $("#timo").hide();$("#gp").hide();
+            $("#hi").hide();  $("#gpi").hide(); 
+            $("#ga").hide(); $("#est").hide();
+            $("#rin").hide(); $("#duo").hide();
+             $("#piel").hide(); $("#panc").hide();
+            $("#tes").hide(); $("#ova").hide();
+            
+            $("#tesimg").hide();$("#pancimg").hide();
+            $("#ovaimg").hide();$("#pimg").hide();
+            $("#panimg").hide();$("#duimg").hide();
+            $("#rinimg").hide();$("#estoimg").hide();
+            $("#coimg").hide();$("#gaimg").hide();
+            $("#timimg").hide();$("#parimg").hide();
+            $("#gtimg").hide();$("#hipimg").hide();
+            $("#gpitimg").hide();$("#gpinimg").hide();           
+            
+            $("#ceimg").hide(); $("#meimg").hide();
+            $("#npimg").hide(); 
+            
+            $("#ce").hide(); $("#np").hide();
+            $("#me").hide(); 
+            
+            $("#urtra").hide(); $("#ri").hide();
+            $("#vej").hide();  $("#ur").hide();
+            $("#urtraimg").hide(); $("#riimg").hide();
+            $("#vejimg").hide();  $("#urimg").hide();
+            
+             $("#huesos").hide(); $("#articulaciones").hide();
+            $("#cartilago").hide(); 
+            $("#huimg").hide(); $("#artimg").hide();
+            $("#carimg").hide();
+
+            $("#bron").hide(); $("#lar").hide();
+            $("#tra").hide();  $("#pulm").hide();
+            $("#broimg").hide(); $("#larimg").hide();
+            $("#traimg").hide();  $("#pulimg").hide();
+            
+            $("#coimg").hide(); $("#arimg").hide();
+            $("#veimg").hide();
+            $("#corazon").hide(); $("#art").hide();
+            $("#ve").hide();
+
+            $("#bocaimg").show();
+            $("#gsimg").show();
+            $("#esimg").show();
+            $("#estimg").show();
+            $("#panimg").show();
+            $("#hiimg").show();
+            $("#vbimg").show();
+            $("#idimg").show();
+            $("#igimg").show();
+            $("#recimg").show();
+            
+            $("#estomago").show();
+            $("#glandula").show();
+            $("#boca").show();
+            $("#esofago").show();
+            $("#pancreas").show();
+            $("#higado").show();
+            $("#bilis").show();
+            $("#ig").show();
+            $("#id").show();
+            $("#recto").show();
+            
+            mostrarDialogoTest("digestivo");
+       });
+            
+       $('#circulatorio').click(function() {
+//            var elementos = document.getElementById("lungs");
+            $("#para").hide();$("#co").hide(); 
+            $("#timo").hide();$("#gp").hide();
+            $("#hi").hide();  $("#gpi").hide(); 
+            $("#ga").hide(); $("#est").hide();
+            $("#rin").hide(); $("#duo").hide();
+             $("#piel").hide(); $("#panc").hide();
+           $("#tes").hide(); $("#ova").hide();  
+            $("#ceimg").hide(); $("#meimg").hide();
+            $("#npimg").hide(); 
+            
+            $("#tesimg").hide();$("#pancimg").hide();
+            $("#ovaimg").hide();$("#pimg").hide();
+            $("#ppanimg").hide();$("#duimg").hide();
+            $("#rinimg").hide();$("#estoimg").hide();
+            $("#ccoimg").hide();$("#gaimg").hide();
+            $("#timimg").hide();$("#parimg").hide();
+            $("#gtimg").hide();$("#hipimg").hide();
+            $("#gpitimg").hide();$("#gpinimg").hide();
+            
+            
+            $("#ce").hide(); $("#np").hide();
+            $("#me").hide(); 
+            
+            $("#bron").hide(); $("#lar").hide();
+            $("#tra").hide();  $("#pulm").hide();
+            $("#broimg").hide(); $("#larimg").hide();
+            $("#traimg").hide();  $("#pulimg").hide();
+            
+            $("#urtra").hide(); $("#ri").hide();
+            $("#vej").hide();  $("#ur").hide();
+            $("#urtraimg").hide(); $("#riimg").hide();
+            $("#vejimg").hide();  $("#urimg").hide();
+            
+            $("#bocaimg").hide();$("#gsimg").hide();
+            $("#esimg").hide();  $("#estimg").hide();
+            $("#panimg").hide(); $("#hiimg").hide();
+            $("#vbimg").hide();  $("#idimg").hide();
+            $("#igimg").hide();  $("#recimg").hide();
+            
+            $("#estomago").hide(); $("#glandula").hide();
+            $("#boca").hide();     $("#esofago").hide();
+            $("#pancreas").hide(); $("#higado").hide();
+            $("#bilis").hide();    $("#ig").hide();
+            $("#id").hide();       $("#recto").hide();
+            
+             $("#huesos").hide(); $("#articulaciones").hide();
+            $("#cartilago").hide(); 
+            $("#huimg").hide(); $("#artimg").hide();
+            $("#carimg").hide();
+            
+            $("#coimg").show(); $("#arimg").show();
+            $("#veimg").show();
+            
+            $("#corazon").show(); $("#art").show();
+            $("#ve").show();
+            
+            mostrarDialogoTest("circulatorio");
+        }); 
+    $('#respiratorio').click(function() {
+//            var elementos = document.getElementById("lungs");
+            $("#timo").hide();$("#gp").hide();
+            $("#hi").hide();  $("#gpi").hide(); 
+            $("#para").hide();$("#co").hide(); 
+            $("#ga").hide(); $("#est").hide();
+            $("#rin").hide(); $("#duo").hide();
+            $("#piel").hide(); $("#panc").hide(); 
+            $("#tes").hide(); $("#ova").hide();
+            
+            $("#tesimg").hide();$("#pancimg").hide();
+            $("#ovaimg").hide();$("#pimg").hide();
+            $("#ppanimg").hide();$("#duimg").hide();
+            $("#rinimg").hide();$("#estoimg").hide();
+            $("#ccoimg").hide();$("#gaimg").hide();
+            $("#timimg").hide();$("#parimg").hide();
+            $("#gtimg").hide();$("#hipimg").hide();
+            $("#gpitimg").hide();$("#gpinimg").hide();
+            
+            $("#ceimg").hide(); $("#meimg").hide();
+            $("#npimg").hide(); 
+            
+            $("#ce").hide(); $("#np").hide();
+            $("#me").hide(); 
+            
+            $("#bocaimg").hide();$("#gsimg").hide();
+            $("#esimg").hide();  $("#estimg").hide();
+            $("#panimg").hide(); $("#hiimg").hide();
+            $("#vbimg").hide();  $("#idimg").hide();
+            $("#igimg").hide();  $("#recimg").hide();
+            
+            $("#urtra").hide(); $("#ri").hide();
+            $("#vej").hide();  $("#ur").hide();
+            $("#urtraimg").hide(); $("#riimg").hide();
+            $("#vejimg").hide();  $("#urimg").hide();
+            
+            $("#estomago").hide(); $("#glandula").hide();
+            $("#boca").hide();     $("#esofago").hide();
+            $("#pancreas").hide(); $("#higado").hide();
+            $("#bilis").hide();    $("#ig").hide();
+            $("#id").hide();       $("#recto").hide();
+            
+            $("#coimg").hide(); $("#arimg").hide();
+            $("#veimg").hide();
+            
+            $("#corazon").hide(); $("#art").hide();
+            $("#ve").hide();
+            
+             $("#huesos").hide(); $("#articulaciones").hide();
+            $("#cartilago").hide(); 
+            $("#huimg").hide(); $("#artimg").hide();
+            $("#carimg").hide();
+            
+            $("#bron").show(); $("#lar").show();
+            $("#tra").show();  $("#pulm").show(); 
+            
+            $("#broimg").show(); $("#larimg").show();
+            $("#traimg").show();  $("#pulimg").show();
+            
+            
+            mostrarDialogoTest("respiratorio");
+        });  
+        $('#urinario').click(function() {
+//            var elementos = document.getElementById("lungs");
+            $("#timo").hide();$("#gp").hide();
+            $("#hi").hide();  $("#gpi").hide(); 
+            $("#para").hide();$("#co").hide(); 
+            $("#ga").hide(); $("#est").hide();
+            $("#rin").hide(); $("#duo").hide();
+             $("#piel").hide(); $("#panc").hide();
+           $("#tes").hide(); $("#ova").hide();
+           
+           $("#tesimg").hide();$("#pancimg").hide();
+            $("#ovaimg").hide();$("#pimg").hide();
+            $("#ppanimg").hide();$("#duimg").hide();
+            $("#rinimg").hide();$("#estoimg").hide();
+            $("#ccoimg").hide();$("#gaimg").hide();
+            $("#timimg").hide();$("#parimg").hide();
+            $("#gtimg").hide();$("#hipimg").hide();
+            $("#gpitimg").hide();$("#gpinimg").hide();
+            
+           
+            $("#bocaimg").hide();$("#gsimg").hide();
+            $("#esimg").hide();  $("#estimg").hide();
+            $("#panimg").hide(); $("#hiimg").hide();
+            $("#vbimg").hide();  $("#idimg").hide();
+            $("#igimg").hide();  $("#recimg").hide();
+            
+            $("#ceimg").hide(); $("#meimg").hide();
+            $("#npimg").hide(); 
+            
+            $("#ce").hide(); $("#np").hide();
+            $("#me").hide(); 
+            
+            $("#estomago").hide(); $("#glandula").hide();
+            $("#boca").hide();     $("#esofago").hide();
+            $("#pancreas").hide(); $("#higado").hide();
+            $("#bilis").hide();    $("#ig").hide();
+            $("#id").hide();       $("#recto").hide();
+            
+            $("#coimg").hide(); $("#arimg").hide();
+            $("#veimg").hide();
+            
+            $("#corazon").hide(); $("#art").hide();
+            $("#ve").hide();
+            
+            $("#bron").hide(); $("#lar").hide();
+            $("#tra").hide();  $("#pulm").hide(); 
+            $("#broimg").hide(); $("#larimg").hide();
+            $("#traimg").hide();  $("#pulimg").hide();
+            
+             $("#huesos").hide(); $("#articulaciones").hide();
+            $("#cartilago").hide(); 
+            $("#huimg").hide(); $("#artimg").hide();
+            $("#carimg").hide();
+            
+            $("#urtra").show(); $("#ri").show();
+            $("#vej").show();  $("#ur").show();
+            $("#urtraimg").show(); $("#riimg").show();
+            $("#vejimg").show();  $("#urimg").show();
+
+            mostrarDialogoTest("urinario");
+            
+            
+        });    
+        $('#endocrino').click(function() {
+//            var elementos = document.getElementById("lungs");
+            $("#timo").show();$("#gp").show();
+            $("#hi").show();  $("#gpi").show(); 
+            $("#para").show(); $("#co").show();
+            $("#ga").show(); $("#est").show();
+            $("#rin").show(); $("#duo").show();
+            $("#piel").show(); $("#panc").show();
+            $("#tes").show(); $("#ova").show();
+            
+            $("#tesimg").show();$("#pancimg").show();
+            $("#ovaimg").show();$("#pimg").show();
+            $("#ppanimg").show();$("#duimg").show();
+            $("#rinimg").show();$("#estoimg").show();
+            $("#ccoimg").show();$("#gaimg").show();
+            $("#timimg").show();$("#parimg").show();
+            $("#gtimg").show();$("#hipimg").show();
+            $("#gpitimg").show();$("#gpinimg").show();
+            
+            $("#bocaimg").hide();$("#gsimg").hide();
+            $("#esimg").hide();  $("#estimg").hide();
+            $("#panimg").hide(); $("#hiimg").hide();
+            $("#vbimg").hide();  $("#idimg").hide();
+            $("#igimg").hide();  $("#recimg").hide();
+            
+            $("#ceimg").hide(); $("#meimg").hide();
+            $("#npimg").hide(); 
+            
+            $("#ce").hide(); $("#np").hide();
+            $("#me").hide();       
+            
+            $("#estomago").hide(); $("#glandula").hide();
+            $("#boca").hide();     $("#esofago").hide();
+            $("#pancreas").hide(); $("#higado").hide();
+            $("#bilis").hide();    $("#ig").hide();
+            $("#id").hide();       $("#recto").hide();
+            
+            $("#coimg").hide(); $("#arimg").hide();
+            $("#veimg").hide();
+            
+            $("#corazon").hide(); $("#art").hide();
+            $("#ve").hide();
+            
+            $("#bron").hide(); $("#lar").hide();
+            $("#tra").hide();  $("#pulm").hide(); 
+            $("#broimg").hide(); $("#larimg").hide();
+            $("#traimg").hide();  $("#pulimg").hide();
+            
+            $("#urtra").hide(); $("#ri").hide();
+            $("#vej").hide();  $("#ur").hide();
+            $("#urtraimg").hide(); $("#riimg").hide();
+            $("#vejimg").hide();  $("#urimg").hide();
+            
+            $("#huesos").hide(); $("#articulaciones").hide();
+            $("#cartilago").hide(); 
+            $("#huimg").hide(); $("#artimg").hide();
+            $("#carimg").hide();
+            
+             mostrarDialogoTest("endocrino");
+            
+        });    
+        $('#oseo').click(function() {
+//            var elementos = document.getElementById("lungs");
+            $("#timo").hide();$("#gp").hide();
+            $("#hi").hide();  $("#gpi").hide(); 
+            $("#co").hide(); $("#para").hide();
+            $("#ga").hide(); $("#est").hide();
+            $("#rin").hide(); $("#duo").hide();
+            $("#piel").hide(); $("#panc").hide();
+           $("#tes").hide(); $("#ova").hide();
+           
+           $("#tesimg").hide();$("#pancimg").hide();
+            $("#ovaimg").hide();$("#pimg").hide();
+            $("#ppanimg").hide();$("#duimg").hide();
+            $("#rinimg").hide();$("#estoimg").hide();
+            $("#ccoimg").hide();$("#gaimg").hide();
+            $("#timimg").hide();$("#parimg").hide();
+            $("#gtimg").hide();$("#hipimg").hide();
+            $("#gpitimg").hide();$("#gpinimg").hide();
+            
+           
+            $("#bocaimg").hide();$("#gsimg").hide();
+            $("#esimg").hide();  $("#estimg").hide();
+            $("#panimg").hide(); $("#hiimg").hide();
+            $("#vbimg").hide();  $("#idimg").hide();
+            $("#igimg").hide();  $("#recimg").hide();
+            
+            $("#ceimg").hide(); $("#meimg").hide();
+            $("#npimg").hide(); 
+            
+            $("#ce").hide(); $("#np").hide();
+            $("#me").hide();       
+            
+            $("#estomago").hide(); $("#glandula").hide();
+            $("#boca").hide();     $("#esofago").hide();
+            $("#pancreas").hide(); $("#higado").hide();
+            $("#bilis").hide();    $("#ig").hide();
+            $("#id").hide();       $("#recto").hide();
+            
+            $("#coimg").hide(); $("#arimg").hide();
+            $("#veimg").hide();
+            
+            $("#corazon").hide(); $("#art").hide();
+            $("#ve").hide();
+            
+            $("#bron").hide(); $("#lar").hide();
+            $("#tra").hide();  $("#pulm").hide(); 
+            $("#broimg").hide(); $("#larimg").hide();
+            $("#traimg").hide();  $("#pulimg").hide();
+            
+            $("#urtra").hide(); $("#ri").hide();
+            $("#vej").hide();  $("#ur").hide();
+            $("#urtraimg").hide(); $("#riimg").hide();
+            $("#vejimg").hide();  $("#urimg").hide();
+            
+            $("#huesos").show(); $("#articulaciones").show();
+            $("#cartilago").show(); 
+            $("#huimg").show(); $("#artimg").show();
+            $("#carimg").show();
+            
+            mostrarDialogoTest("esqueleto");
+            
+        });    
+        
+     });
+    </script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.jsidebar-offcanvassidebar-offcanvassidebar-offcanvass"></script>-->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  
+<script  type="text/javascript" src="../js/dibujar.js"></script>
+</body></html>

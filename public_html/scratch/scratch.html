@@ -1,0 +1,118 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="newcss.css" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+<!--h-->
+    <div class="container">
+  <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+               <a href="../Inicio/index.html">
+                <img src="../images/logo2.png" alt="als" class="img-circle"  width='100' height='100' style='margin:0em;'>
+                 <!--<li><a href="../navbar-static-top/" >--> 
+                 <img src="../images/letras.png" alt="als"  width='500' height='100' style='margin:0em;'>
+              </a>
+          </div>
+          
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="../acercade.html">Acerca de</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+      <!-- Main component for a primary marketing message or call to action -->
+     
+      <div  class="jumbotron" style="background: rgba(255,255,255,0.5);">
+           
+           <div class="row"> 
+             <!--<button type="button" class="btn btn-primary col-md-offset-10" >Destacado</button>-->
+             <script  type="text/javascript" src="../js/zoom.js"></script>
+               <div class="col-md-4">
+                   
+                   <input id="botonVerde" type="button" value="Digestivo" name="sis_digestivo.png" onclick="cargaIMG(name,'../images/sd.jpg');"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Circulatorio" name="sis_circulatorio.png" onclick="cargaIMG(name,'../images/sc.jpg');"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Respiratorio" name="sis_respiratorio.png" onclick="cargaIMG(name,'../images/sr.jpg');"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Urinario" name="sis_urinario.png" onclick="cargaIMG(name,'../images/su.jpg');"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Óseo" name="esqueleto.png" onclick="cargaIMG(name,'../images/esq.jpg');"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Nervioso" name="sis_nervioso.png" onclick="cargaIMG(name,'../images/sn.jpg');"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Endocrino" name="sis_endocrino.png" onclick="cargaIMG(name,'../images/se.jpg');"/>            <br>
+                    <br>
+                    <input type="button" class="img-thumbnail col-lg-1" style="background-image:url('../images/lupa.png'); width: 95; height: 100" onclick="lensIMG();"/>
+                    <br>
+                    <br>                    
+                    <br>                                       
+                    <br>                                       
+                    <br>                   
+                    <br>
+                    <input id="botonVerde" value="Volver" style="background:green" onclick="location.href='../Inicio/index.html'" />
+               </div>
+             
+               <div  class="col-md-offset-3" id="contenido" >
+                   <div class="row" id="row">
+                       <div class="col-lg-offset-1" id="sceatchable">
+                       <canvas  id="canvas" style="margin: 0 auto; top: 0px; left:0px;"></canvas>                       
+                        </div>
+                       
+                      
+                </div>
+              
+<!--                <script src="../js/ScratchCard.js"></script>-->
+                <!--<script>ScratchCard(document.querySelector('#sceatchable'));</script>-->
+            </div>
+             <!--<img src="../images/logo.png" alt="lupa"  class="col-md-offset-10" width='100' height='100' onclick="lensIMG(name)">-->
+                
+         </div>
+          
+          <div 
+              style="position: absolute; width: 150px; height: 215px; top: 385px; left:1100px;">              
+              <!--<img id="pet" src="../images/pet.gif"  style="width:150px;height:215px">-->
+               <canvas width="150" height="215" id="canvass" ></canvas> 
+          </div> 
+           
+          <div id="burbujaTexto" style=" width: 200px; height: 200px; position: absolute; top: 330px; left: 1000px; display: block;">
+              <img id="imgen" src="../imagenesMascota/burbujadragscra.png"> 
+              
+           </div>
+          
+      </div>
+
+    </div> <!-- /container -->
+ <script src="../js/ScratchCard.js"></script>
+ <script src="../js/jquerylens.js"></script>
+ <script src="../js/jquery.imageLens.js"></script>
+<script src="../js/dibujar.js"></script>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+  
+</body></html>

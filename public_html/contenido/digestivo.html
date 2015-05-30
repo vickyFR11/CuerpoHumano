@@ -1,0 +1,183 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="../scratch/newcss.css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet">   
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" 
+    href="../css/jquery.dataTables.min.css">
+    <script type="text/javascript" 
+    src="../js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" 
+    src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/mostrar.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../navbar.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <a href="../Inicio/index.html">
+                <img src="../images/logo2.png" alt="als" class="img-circle"  width='100' height='100' style='margin:0em;'>
+                 <!--<li><a href="../navbar-static-top/" >--> 
+                 <img src="../images/letras.png" alt="als"  width='500' height='100' style='margin:0em;'>
+              </a>
+          </div>
+          
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="../acercade.html">Acerca de</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+      <!-- Main component for a primary marketing message or call to action -->
+     
+      <div  class="jumbotron" style="background: rgba(255,255,255,0.5);">
+           <div class="row"> 
+               <div class="col-md-3">
+                    <input id="botonVerde" type="button" value="Digestivo" name="digestivo"  onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Circulatorio" name="circulatorio" onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Respiratorio" name="respiratorio" onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Urinario" name="urinario" onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Óseo" name="esqueleto" onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Nervioso" name="nervioso" onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Endocrino" name="endocrino" onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <br>                    
+                    <br>
+                    <input id="botonVerde" value="Volver" style="background:green" onclick="location.href='../Inicio/index.html'" />
+               </div>
+               <div class="col-md-6">
+                    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                        <thead style="background-color: #35b128; color: white;">
+                         <tr>
+                             <th>Cómo se ve</th>
+                             <th>Concepto</th>
+                         </tr>
+                     </thead>
+
+                     <tbody>
+                         <tr>
+                             <td><img src="../images/digestivo/boca.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Boca <br></strong>Es el comienzo del sistema digestivo, abertura por donde ingresan los alimentos al organismo. 
+                                 Está compuesta por: Labios, lengua y dientes.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/digestivo/glandula salival.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Glándulas salivales</strong> Son glándulas exocrinas en el 
+                                 sistema digestivo superior que producen la saliva.
+                                 La saliva es un líquido incoloro de consistencia acuosa o mucosa.
+                                 Su función, entre otras, es iniciar la digestión 
+                                 de los alimentos.</td>
+                         </tr> 
+                         <tr>
+                             <td><img src="../images/digestivo/3.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Esófago <br></strong>Es un conducto o músculo membranoso que se extiende 
+                                 desde la faringe hasta el estómago. Empieza en el cuello, 
+                                 atraviesa todo el tórax y pasa al abdomen a través del orificio esofágico del diafragma.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/digestivo/estomago.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Estómago <br></strong>El estómago es un órgano en el que se acumula comida.
+                                 Consta de varias partes que son: fundus, cuerpo, antro y píloro. Es el encargado de hacer la transformación 
+                                 química por medio de los jugos gástricos.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/digestivo/pancreas.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Páncreas <br></strong>Es una glándula que segrega hormonas a la sangre para controlar los azúcares y jugo pancreático 
+                                 que se vierte al intestino a través del conducto pancreático, interviene y facilita la digestión, 
+                                 sus secreciones tienen gran importancia en la digestión de los alimentos.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/digestivo/higado.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Hígado <br></strong>El hígado es la mayor víscera del cuerpo. Pesa 1500 gramos. Consta de cuatro lóbulos, derecho, 
+                                 izquierdo, cuadrado y caudado; los cuales a su vez se dividen en segmentos. Es de forma 
+                                 ovalada o ligeramente piriforme y su diámetro mayor es de unos 5 a 8 cm.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/digestivo/vesicula biliar.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Vesícula Biliar <br></strong>Es un órgano que forma parte del aparato digestivo, está situada por debajo del hígado. La función de 
+                                 la vesícula es almacenar y concentrar la bilis secretada por el hígado.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/digestivo/intestino grueso.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Intestino Grueso <br></strong>Es la penúltima porción del tubo digestivo, formada por el ciego, 
+                                 el colon, el recto y el canal anal. Se limita a absorber los minerales, el agua y las vitaminas (K y B12).
+                                 También compacta las heces y almacena la materia fecal en el recto hasta que es expulsada a través del ano.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/digestivo/intestino delgado.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Intestino Delgado <br></strong>Absorbe los nutrientes necesarios para el cuerpo humano, mide aproximadamente 3.5 m de largo en una persona. 
+                                 Se localiza entre dos esfínteres: el pilórico, y el esfínter ileocecal, que lo comunica con el intestino grueso.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/digestivo/recto.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Recto y Ano <br></strong>Es el último tramo del tubo digestivo, 
+                                 situado inmediatamente después del colon. Recibe los materiales de desecho que quedan 
+                                 después de todo el proceso de la digestión de los alimentos, constituyendo las heces. Parte 
+                                 final del intestino grueso, de allí las heces salen a través del ano.</td>
+                         </tr>
+                     </tbody>
+                 </table>
+               </div> 
+                <canvas width="150" height="215" id="canvass" style="position: absolute; top: 370px; left: 1115px;"></canvas>
+            </div>
+
+          
+           
+          <div id="burbujaTexto" style=" width: 200px; height: 200px; position: absolute; top: 300px; left: 1025px; display: block;">
+              <img id="imgen" src="../imagenesMascota/burbuja1.png"> 
+           </div>
+          
+          
+          </div>
+      </div>
+<script>
+$(document).ready(function(){
+    $('#example').dataTable( {
+    "iDisplayLength": 1,
+    "bLengthChange": false,
+    "bFilter": false,
+    "ordering": false,
+    "pagingType": "simple",
+    "language": {
+        "sInfo": " ",
+        "paginate": {
+          "previous": "Anterior",
+          "next": "Siguiente"
+        }    
+    }
+  } );
+});
+</script>
+    <script  type="text/javascript" src="../js/dibujar.js"></script>
+</body>
+</html>

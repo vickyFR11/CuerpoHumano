@@ -1,0 +1,201 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="../scratch/newcss.css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet">   
+    <script src="../js/jquery.min.js"></script>
+    <link rel="stylesheet" 
+    href="../css/jquery.dataTables.min.css">
+    <script type="text/javascript" 
+    src="../js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" 
+    src="../js/bootstrap.min.js"></script>
+
+    <script src="../js/mostrar.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../navbar.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+             <a href="../Inicio/index.html">
+                <img src="../images/logo2.png" alt="als" class="img-circle"  width='100' height='100' style='margin:0em;'>
+                 <!--<li><a href="../navbar-static-top/" >--> 
+                 <img src="../images/letras.png" alt="als"  width='500' height='100' style='margin:0em;'>
+              </a>
+          </div>
+          
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="../acercade.html">Acerca de</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+      <!-- Main component for a primary marketing message or call to action -->
+     
+      <div  class="jumbotron" style="background: rgba(255,255,255,0.5);">
+           <div class="row"> 
+               <div class="col-md-3">
+                    <input id="botonVerde" type="button" value="Digestivo" name="digestivo"  onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Circulatorio" name="circulatorio" onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Respiratorio" name="respiratorio" onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Urinario" name="urinario" onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Óseo" name="esqueleto" onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Nervioso" name="nervioso" onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <input id="botonVerde" type="button" value="Endocrino" name="endocrino" onclick="mostrarDialogoContenido(name)"/>
+                    <br>
+                    <br>
+                    <br>                    
+                    <br>
+                    <input id="botonVerde" value="Volver" style="background:green" onclick="location.href='../Inicio/index.html'" />
+               </div>
+               <div class="col-md-6">
+                    <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                        <thead style="background-color: #35b128; color: white;">
+                         <tr>
+                             <th>Cómo se ve</th>
+                             <th>Concepto</th>
+                         </tr>
+                     </thead>
+
+                     <tbody>
+                         <tr>
+                             <td><img src="../images/endocrino/glandula pineal.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Glándula Pineal <br></strong>Responsable de la hormona Melatonina, se genera cada vez que hay oscuridad para dormir.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/endocrino/glandula pituitaria.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Glándula Pituitaria <br></strong>Glándula compleja que se encuentra en la base del cráneo, conectada al hipotálamo.</td>
+                         </tr> 
+                         <tr>
+                             <td><img src="../images/endocrino/hipotalamo.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Hipotálamo <br></strong>Es la región del cerebro encargada de regular la liberación de hormonas de la hipófisis, mantiene la temperatura corporal y organiza conductas, 
+                                 como la alimentación, ingesta de líquidos, apareamiento y agresión. Es el regulador central de las funciones viscerales autónomas y endocrinas.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/endocrino/glandula tiroidea.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Glándula Tiroidea <br></strong>Se encarga de regular el metabolismo del cuerpo, es productora de proteínas y regula la sensibilidad del cuerpo a otras hormonas.
+                              Está formada por dos lóbulos en forma de mariposa a ambos lados de la tráquea.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/endocrino/glandula paratiroides.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Glándula Paratiroides <br></strong>Son glándulas endocrinas situadas en el cuello, por detrás de los lóbulos tiroides. Estas producen la hormona paratiroidea, dicha hormona
+                             se encarga de facilitar la absorción y resorción del calcio.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/endocrino/glandula del timo.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Glándula del Timo <br></strong> Produce los denominados linfocitos T,papel principal en nuestro sistema inmunológico.
+                            De acuerdo al estado de ánimo la glándula crece o decrece. El timo se ve afectado por los dos sentimientos básicos del ser humano: el amor y el miedo.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/endocrino/corazon2.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Corazón <br></strong> Es un músculo hueco y piramidal situado en la cavidad torácica. 
+                                 Funciona como una bomba aspirante e impelente, impulsando la sangre a todo el cuerpo.</td>
+                         </tr> 
+                         <tr>
+                             <td><img src="../images/endocrino/glandula adrenal.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Glándulas Suprarenales <br></strong> Son estructuras bilaterales ubicadas en situación superomedial respecto de los riñones.
+                             Segrega dos tipos de hormonas que hacen que la sangre sé desvíe hacia los sitios de emergencia, en caso de estrés o situaciones de riesgo.</td>
+                         </tr> 
+                         <tr>
+                             <td><img src="../images/endocrino/glandula adrenal.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Glándulas Suprarenales <br></strong> Son estructuras bilaterales ubicadas en situación superomedial respecto de los riñones.
+                             Segrega dos tipos de hormonas que hacen que la sangre sé desvíe hacia los sitios de emergencia, en caso de estrés o situaciones de riesgo.</td>
+                         </tr> 
+                         <tr>
+                             <td><img src="../images/endocrino/riñon.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Riñón <br></strong> Filtran la sangre del aparato circulatorio y eliminan los desechos 
+                                 mediante la orina, a través de un complejo sistema que incluye mecanismos de filtración, reabsorción y excreción.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/endocrino/pancreas2.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Páncreas <br></strong>Es una glándula que segrega hormonas a la sangre para controlar los azúcares y jugo pancreático 
+                                 que se vierte al intestino a través del conducto pancreático, interviene y facilita la digestión, 
+                                 sus secreciones tienen gran importancia en la digestión de los alimentos.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/endocrino/estomago.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Estómago <br></strong>El estómago es un órgano en el que se acumula comida.
+                                 Consta de varias partes que son: fundus, cuerpo, antro y píloro. Es el encargado de hacer la transformación 
+                                 química por medio de los jugos gástricos.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/endocrino/duodeno.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Duodeno <br></strong>Es la parte inicial del intestino delgado, a nivel del duodeno es que se absorben muchos metabolitos 
+                                 y nutrientes como el calcio, el hierro, las vitaminas y los lípidos.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/endocrino/piel.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Piel <br></strong>Es el órgano más grande del cuerpo, entre sus principales funciones está proteger al organismo de factores 
+                                 externos como bacterias, sustancias químicas y temperatura.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/endocrino/testiculos.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Testículos <br></strong>Son las gónadas masculinas, coproductoras de los espermatozoides y de las hormonas sexuales. 
+                                 Forman la parte más importante del aparato reproductor masculino.</td>
+                         </tr>
+                         <tr>
+                             <td><img src="../images/endocrino/ovarios.jpg" alt="" style="width: 300px; height: 300px;"></td>
+                             <td><strong>Ovarios <br></strong>Órgano reproductor femenino productor y secretor de hormonas sexuales y óvulos. 
+                                 Los ovarios femeninos son el equivalente a los testículos masculinos.</td>
+                         </tr>
+                     </tbody>
+                 </table>
+               </div>   
+                <canvas width="150" height="215" id="canvass" style="position: absolute; top: 370px; left: 1115px;"></canvas>
+            </div>
+          
+          
+          <div id="burbujaTexto" style=" width: 200px; height: 200px; position: absolute; top: 300px; left: 1025px; display: block;">
+              <img id="imgen" src="../imagenesMascota/burbuja7.png"> 
+           </div>
+          
+          </div>
+      </div>
+<script>
+$(document).ready(function(){
+    $('#example').dataTable( {
+    "iDisplayLength": 1,
+    "bLengthChange": false,
+    "bFilter": false,
+    "ordering": false,
+    "pagingType": "simple",
+    "language": {
+        "sInfo": " ",
+        "paginate": {
+          "previous": "Anterior",
+          "next": "Siguiente"
+        }    
+    }
+  } );
+});
+</script>
+ <script  type="text/javascript" src="../js/dibujar.js"></script>
+</body>
+</html>
